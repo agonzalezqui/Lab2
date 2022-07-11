@@ -12,14 +12,13 @@ def greatest_common_divisor(n1b, n2b):
 #2A
 def p_q_factors(n):
 	a=math.isqrt(n)+1
-	temp=math.isqrt((a*a)-n)
-	D1 = temp*temp
+	b=math.isqrt((a*a)-n)
+	D1 = b*b
 	D2 = ((a*a)-n)
 	while not (D1 == D2):
-		temp=math.isqrt((a*a)-n)
-	s=temp
-	p=a+s
-	q=a-s
+		b=math.isqrt((a*a)-n)
+	p=a+b
+	q=a-b
 	print('First number: ', p, "\n")
 	print('Second number: ', q, "\n")
 	validation = p * q
